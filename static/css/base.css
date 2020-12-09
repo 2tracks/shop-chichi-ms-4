@@ -22,8 +22,15 @@ body {
     color: #743B3B!important;
 }
 
+.text-rosa-light {
+    color: #FCEAE7!important;
+}
+
 .bg-rosa {
     background-color: #C5A6A6!important;
+}
+.bg-black{
+    background-color: #000;
 }
 
 /* from Bulma */
@@ -41,6 +48,10 @@ body {
 
 .main-logo-link {
     width: fit-content;
+}
+
+.dropdown-item:hover {
+    color: #743B3B!important;
 }
 
 .shop-now-button {
@@ -79,6 +90,17 @@ body {
 .border-rosa-dark {
     border: 1px solid #743B3B !important;
 }
+
+/* Code from Stackoverflow */
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(116,59,59, 0.6)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/* Code from Stackoverflow */
+.custom-toggler.navbar-toggler {
+  border-color: #743B3B!important;
+  box-shadow: 0 4px 8px 0 rgba(116, 59, 59, 0.2), 0 6px 20px 0 rgba(116, 59, 59, 0.19);
+} 
 
 input::-webkit-input-placeholder {
     color: rgba(116, 59, 59, 0.5)!important;
