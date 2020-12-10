@@ -1,0 +1,265 @@
+[
+    {   "pk": 1,
+        "model": "products.product",
+        "fields": {"sku": "pp5001340155",
+        "name": "Black Puppia harness",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "price": 35.50,
+        "category": 6,
+        "rating": 4.6,
+        "image_url": null,
+        "image": "h_black.jpg"}
+    },
+    {
+      "pk":2,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001600425",
+         "name":"Black Bag",
+         "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+         "price":58.99,
+         "category":7,
+         "rating":4.6,
+         "image_url": null,
+         "image":"bag.jpg"
+      }
+   },
+   {
+      "pk":3,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001730010",
+         "name":"Lead Scott",
+         "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+         "price":45.90,
+         "category":6,
+         "rating":4.7,
+         "image_url":null,
+         "image":"lead_scott.jpg"
+      }
+   },
+   {
+      "pk":4,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001600426",
+         "name":"Collar pink",
+         "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+         "price":58.99,
+         "category":6,
+         "rating":3,
+         "image_url": null,
+         "image":"c_pink.jpg"
+      }
+   },
+   {
+      "pk":5,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001600427",
+         "name":"Red polar coat",
+         "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+         "price":58.99,
+         "category":2,
+         "rating":4.6,
+         "image_url": null,
+         "image":"polar_red.jpg"
+      }
+   },
+   {
+      "pk":6,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001600428",
+         "name":"Neon street",
+         "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+         "price":30.25,
+         "category":3,
+         "rating":4.6,
+         "image_url": null,
+         "image":"neon.jpg"
+      }
+   },
+   {
+      "pk":7,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001600429",
+         "name":"I'm Fabulous",
+         "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+         "price":58.99,
+         "category":1,
+         "rating":5.00,
+         "image_url": null,
+         "image":"pinkfab_shirt.jpg"
+      }
+   },
+   {
+      "pk":8,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001600430",
+         "name":"Angel Bandana",
+         "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+         "price":5.00,
+         "category":6,
+         "rating":4,
+         "image_url": null,
+         "image":"b_angel.jpg"
+      }
+   },
+   {
+      "pk":9,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001600431",
+         "name":"Black Bag",
+         "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+         "price":58.99,
+         "category":6,
+         "rating":3.8,
+         "image_url": null,
+         "image":"h_red.jpg"
+      }
+   },
+   {
+      "pk":10,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001600432",
+         "name":"Black Bag",
+         "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+         "price":41.00,
+         "category":2,
+         "rating":4.6,
+         "image_url": null,
+         "image":"daun.jpg"
+      }
+   },
+   {
+      "pk":11,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001600433",
+         "name":"Laddies Dress",
+         "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+         "price":58.99,
+         "category":1,
+         "rating":4.6,
+         "image_url": null,
+         "image":"posh.jpg"
+      }
+   },
+   {
+      "pk":12,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001600434",
+         "name":"Highlander extra warm",
+         "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+         "price":58.99,
+         "category":2,
+         "rating":4.6,
+         "image_url": null,
+         "image":"highl.jpg"
+      }
+   },
+   {
+      "pk":13,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001600435",
+         "name":"Scott Dress",
+         "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+         "price":61.99,
+         "category":2,
+         "rating":4.6,
+         "image_url": null,
+         "image":"scott.jpg"
+      }
+   },
+   {
+      "pk":14,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001600436",
+         "name":"Polar in blue",
+         "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+         "price":45.65,
+         "category":2,
+         "rating":4.6,
+         "image_url": null,
+         "image":"polar_blue.jpg"
+      }
+   },
+   {
+      "pk":15,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001600437",
+         "name":"Comfy sweater",
+         "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+         "price":21.00,
+         "category":1,
+         "rating":4.6,
+         "image_url": null,
+         "image":"beige.jpg"
+      }
+   },
+   {
+      "pk":16,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001600438",
+         "name":"Born To Bark",
+         "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+         "price":58.99,
+         "category":2,
+         "rating":4.6,
+         "image_url": null,
+         "image":"born_to_bark.jpg"
+      }
+   },
+   {
+      "pk":17,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001600439",
+         "name":"Blue light coat",
+         "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+         "price":58.99,
+         "category":2,
+         "rating":4.6,
+         "image_url": null,
+         "image":"blue_outf.jpg"
+      }
+   },
+   {
+      "pk":18,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001600440",
+         "name":"Christmas Jumper",
+         "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+         "price":25.99,
+         "category":1,
+         "rating":4.8,
+         "image_url": null,
+         "image":"christmas.jpg"
+      }
+   },
+   {
+      "pk":19,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001600441",
+         "name":"Black Lead",
+         "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+         "price":16.00,
+         "category":7,
+         "rating":4.3,
+         "image_url": null,
+         "image":"lead_black.jpg"
+      }
+   }
+]

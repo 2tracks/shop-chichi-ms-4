@@ -115,7 +115,6 @@ input:-moz-placeholder {
 }
 
 .footer{
-    position: absolute;
     margin: 0;
     padding: 0;
     height: 25px;
@@ -130,6 +129,16 @@ input:-moz-placeholder {
 .impressum:hover{
     text-decoration: none;
     color: #743B3B!important;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: #fff;
+    z-index: -1;
 }
 /* -------------------------------- Media Queries */
 
