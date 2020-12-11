@@ -162,4 +162,7 @@ input:-moz-placeholder {
     .header-container {
         padding-top: 164px;
     }
+    #home-link {
+        display: none;
+    }
 }
