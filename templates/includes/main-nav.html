@@ -22,11 +22,11 @@
                 Dog Stuff
             </a>
             <div class="dropdown-menu bg-rosa text-rosa-light border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item text-rosa-light">Shirts &amp; Jumpers</a>
-                <a href="" class="dropdown-item text-rosa-light">Jackets &amp; Outerwear</a>
-                <a href="" class="dropdown-item text-rosa-light">Harnesses &amp; Leads</a>
-                <a href="" class="dropdown-item text-rosa-light">Travel Bags &amp; Beds</a>
-                <a href="" class="dropdown-item text-rosa-light">All Clothing</a>
+                <a href="{% url 'products' %}?category=shirts_jumpers" class="dropdown-item text-rosa-light">Shirts &amp; Jumpers</a>
+                <a href="{% url 'products' %}?category=jackets_outerwear" class="dropdown-item text-rosa-light">Jackets &amp; Outerwear</a>
+                <a href="{% url 'products' %}?category=harnesses_leads" class="dropdown-item text-rosa-light">Harnesses &amp; Leads</a>
+                <a href="{% url 'products' %}?category=tbags_beds" class="dropdown-item text-rosa-light">Travel Bags &amp; Beds</a>
+                <a href="{% url 'products' %}?category=tbags_beds,harnesses_leads,jackets_outerwear,shirts_jumper" class="dropdown-item text-rosa-light">All Clothing</a>
             </div>
         </li>
         <li class="nav-item dropdown">
@@ -34,10 +34,10 @@
                 Special Offers
             </a>
             <div class="dropdown-menu bg-rosa text-rosa-light border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item text-rosa-light">New Arrivals</a>
-                <a href="" class="dropdown-item text-rosa-light">Deals</a>
-                <a href="" class="dropdown-item text-rosa-light">Clearance</a>
-                <a href="" class="dropdown-item text-rosa-light">All Specials</a>
+                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item text-rosa-light">New Arrivals</a>
+                <a href="{% url 'products' %}?category=deals" class="dropdown-item text-rosa-light">Deals</a>
+                <a href="{% url 'products' %}?category=clearance" class="dropdown-item text-rosa-light">Clearance</a>
+                <a href="{% url 'products' %}?category=new_arrivals,deals,clearence" class="dropdown-item text-rosa-light">All Specials</a>
             </div>
         </li>
         <li class="nav-item mr-5">
