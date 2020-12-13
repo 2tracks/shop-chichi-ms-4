@@ -129,6 +129,7 @@ input:-moz-placeholder {
 }
 
 .footer{
+    position: fixed;
     margin: 0;
     padding: 0;
     height: 25px;
