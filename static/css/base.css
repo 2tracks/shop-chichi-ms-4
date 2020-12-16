@@ -5,7 +5,7 @@ html {
 body {
     background: url('/media/dog_bag.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: calc(100vh - 164px);
+    height: calc(100vh - 160px);
     color: #555;
     font-family: 'Montserrat'!important;
     padding-bottom:25px;
@@ -28,6 +28,10 @@ body {
 }
 .text-gold {
     color: #E3B51D!important;
+}
+
+.text-black {
+    color: #000 !important;
 }
 
 .bg-rosa {
@@ -58,12 +62,6 @@ body {
     color: #743B3B!important;
 }
 
-.shop-now-button {
-    background: black;
-    color: white;
-    min-width: 260px;
-}
-
 .btn-black {
     background: black;
     color: white;
@@ -72,6 +70,12 @@ body {
 .btn-rosa-dark {
     background: #743B3B;
     color: #C5A6A6 !important;
+}
+
+.shop-now-button {
+    background: black;
+    color: white;
+    min-width: 260px;
 }
 
 .shop-now-button:hover,
@@ -95,10 +99,6 @@ body {
 .btn-outline-rosa:focus {
     background: #743B3B;
     color: #C5A6A6 !important;
-}
-
-.text-black {
-    color: #000 !important;
 }
 
 .border-black {
@@ -280,7 +280,7 @@ input:active,
     }
 
     .header-container {
-        padding-top: 164px;
+        padding-top: 160px;
     }
     #home-link {
         display: none;
