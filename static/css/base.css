@@ -315,12 +315,6 @@ input:active,
     background-color:#FCEAE7;
     outline: #000;
 }
-.form-control{
-    color: #743B3B!important;
-}
-.form-control:focus{
-    border-color: #743B3B;
-}
 
 /* Media Queries */
 
