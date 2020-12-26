@@ -6,7 +6,7 @@ body {
     background: url('/media/dog_bag.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 160px);
-    color: #555;
+    color: #000;
     font-family: 'Montserrat'!important;
     padding-bottom:25px;
 }
@@ -314,6 +314,34 @@ input:active,
     color: #743B3B!important;
     background-color:#FCEAE7;
     outline: #000;
+}
+
+/* Product Form */
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-file input[type="file"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.custom-checkbox .custom-control-label::before {
+    border-radius: 2px;
+    border-color:#743B3B;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background-color: #743B3B;
+    border-color: #743B3B;
+    border-radius: 0;
 }
 
 /* Media Queries */
