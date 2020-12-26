@@ -370,3 +370,50 @@ input:active,
         display: none;
     }
 }
+
+/* pad the top a bit when navbar is collapsed on mobile */
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 116px;
+    }
+
+    body {
+        height: calc(100vh - 116px);
+    }
+
+    .display-4.logo-font.text-black {
+        font-size: 2rem;
+    }
+
+    .nav-link {
+        padding: 0.15rem;
+    }
+
+    .nav-link i.fa-lg {
+        font-size: 1rem;
+    }
+
+    .navbar-toggler {
+        padding: .6rem .6rem;
+        font-size: 1rem;
+    }
+
+    #delivery-banner h5 {
+        font-size: .9rem;
+    }
+
+    .btn.btn-outline-rosa-dark,
+    .btn.btn-rosa-dark{
+        padding: .375rem .375rem;
+    }
+
+    .btn.btn-outline-rosa-dark.btn-lg,
+    .btn.btn-rosa-dark.btn-lg {
+        padding: .375rem .375rem;
+        font-size: .75rem;
+    }
+
+    .increment-qty, .decrement-qty {
+        padding: .25rem .5rem !important;
+    }
+}
