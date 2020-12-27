@@ -20,4 +20,5 @@ Made with Balsamic and Adobe XD
 ## Credits
 ### Content
 ### Media
+The background pictures are from [Freepick.com](https://de.freepik.com)
 ### Acknowledgement
