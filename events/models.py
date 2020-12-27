@@ -2,7 +2,6 @@ from django.db import models
 
 
 class Event(models.Model):
-
     title = models.CharField(max_length=200)
     location = models.CharField(max_length=200, blank=True)
     date_and_time = models.DateTimeField(null=True, blank=True)

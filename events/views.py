@@ -3,4 +3,10 @@ from .models import Event
 
 
 def events(request):
-    return render(request, 'events/events.html')
+    events = Event.objects.all()
+
+    template = 'events/events.html'
+    context = {
+        'events': events,
+    }
+    return render(request, template, context)
