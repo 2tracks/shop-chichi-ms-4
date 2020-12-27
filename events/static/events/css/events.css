@@ -1,8 +1,8 @@
 .overlay-events{
-    background: url('/media/chihuahua_event.jpg')no-repeat center;
+    background: url('/media/winter_chihuahua.jpg')no-repeat center;
     background-size: cover;
 }
 
 .bg-white-trans {
-    background-color: rgba(255, 255, 255, .6);
+    background-color: rgba(255, 255, 255, .8);
 }

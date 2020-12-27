@@ -1,0 +1,10 @@
+.overlay-events{
+    background: url('/media/chihuahua_event.jpg')no-repeat center;
+    background-size: cover;
+}
+
+.bg-white-trans-blog {
+    margin: 0 auto;;
+    background-color: rgba(255, 255, 255, .6);
+    width: 80%;
+}
