@@ -132,21 +132,11 @@ input:-moz-placeholder {
 }
 
 .footer{
-    position: fixed;
     margin: 0;
     padding: 0;
     height: 25px;
     width: 100%;
-    bottom: 0;
-}
-
-.impressum{
-    text-transform: uppercase;
-}
-
-.impressum:hover{
-    text-decoration: none;
-    color: #743B3B!important;
+    bottom: 0%;
 }
 
 .overlay {
