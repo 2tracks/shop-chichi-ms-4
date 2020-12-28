@@ -1,12 +1,13 @@
 # Shop ChiChi
-![Frontpage](misc/landingpage.jpg)
+![Frontpage](https://github.com/2tracks/shop-chichi-ms-4/blob/master/misc/landingpage.png?raw=true)
 
 If you like little dogs in particular Chihuahuas than Shop ChiChi is the shop for you!
 This is a E-commerce Shop for Chihuahua clothes with an Event site  were you can see which activites are planned
 and a Blog site to see whats poeple say.
 
 ## UX
-![Colors-used](misc/colors.jpg)
+![Colors-used](https://github.com/2tracks/shop-chichi-ms-4/blob/master/misc/colors.png?raw=true)
+
 
 - Wireframe made with Balsamic
 - Color example made with Adobe XD
