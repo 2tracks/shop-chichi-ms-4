@@ -1,0 +1,1 @@
+web: gunicorn shop_chichi.wsgi:application
