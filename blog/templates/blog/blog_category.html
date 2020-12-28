@@ -30,7 +30,7 @@
             </div>
             <div class="row">
                 <div class="col-8 offset-2">
-                    <div class="text-muted">{{ post.data_added | date:"d M, Y | h:i" }}</div>
+                    <div class="text-muted">{{ post.data_added | date:"d M - Y - h:i" }}</div>
                 </div>
             </div>
             <div class="row">
@@ -40,7 +40,7 @@
             </div>
             <div class="row pb-2">
                 <div class="col-8 offset-2">
-                    <a href="{% url 'detail_post'  post.slug %}" class="text-rosa-dark">Read more</a>
+                    <a href="{% url 'detail_post'  post.slug %}" class="text-rosa-dark">Read more <i class="fas fa-forward"></i></a>
                 </div>
             </div>
     </div>

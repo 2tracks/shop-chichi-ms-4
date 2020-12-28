@@ -31,14 +31,14 @@
             </div>
             <div class="row mb-2">
                 <h5 class="col-12 col-md-6"><span class="text-rosa-dark">Location: </span>{{event.location}}</h5>
-                <h5 class="col-12 col-md-6"><span class="text-rosa-dark">Date: </span>{{event.date_and_time}}</h5>
+                <h5 class="col-12 col-md-6"><span class="text-rosa-dark">Date: </span>{{event.date_and_time | date:"d M - Y - h:i"}}</h5>
             </div>
             <div class="row my-2">
                 <p class="col-12">{{event.description}}</p>
             </div>
             <div class="row">
                 <div class="col-12">
-                    <small class="text-muted">Date posted: {{event.timestamp}}</small>
+                    <small class="text-muted">Date posted: {{event.timestamp | date:"d M - Y - h:i"}}</small>
                 </div>
             </div>
             <hr class="border-rosa-dark mb-4">

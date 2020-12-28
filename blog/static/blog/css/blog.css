@@ -8,3 +8,15 @@
     background-color: rgba(255, 255, 255, .6);
     width: 80%;
 }
+
+i.fas.fa-forward {
+    font-size: 12px;
+}
+
+i.fas.fa-forward.category-detail {
+    font-size: 10px;
+}
+
+.article-comment {
+    padding-bottom: 1rem;;
+}
