@@ -49,6 +49,7 @@ Manager / Admin |Delete a blog post|Must be able to delete a blog post in the dj
 
 #### Color scheme
 ![Colors-used](https://github.com/2tracks/shop-chichi-ms-4/blob/master/misc/colors.png?raw=true)
+![Colors-example](https://github.com/2tracks/shop-chichi-ms-4/blob/master/misc/colorexample.png?raw=true)
 - Color example made with Adobe XD
 
 ## Features
