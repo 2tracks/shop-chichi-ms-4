@@ -5,6 +5,8 @@ If you like little dogs in particular Chihuahuas then Shop ChiChi is the shop fo
 This is a E-commerce Shop for Chihuahua clothes with an Event site  were you can see which activites are planed
 and a Blog site to see what people say. This Project is made with Django3 - Python - Bootstrap hosted on Heroku and the static files on AWS S3 Bucket.
 
+[You can visit the Live Demo here](https://shop-chichi-ms-4.herokuapp.com/)
+
 ## UX
 ### User Stories
 
