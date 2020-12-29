@@ -1,16 +1,21 @@
 # Shop ChiChi
 ![Frontpage](https://github.com/2tracks/shop-chichi-ms-4/blob/master/misc/landingpage.png?raw=true)
 
-If you like little dogs in particular Chihuahuas than Shop ChiChi is the shop for you!
-This is a E-commerce Shop for Chihuahua clothes with an Event site  were you can see which activites are planned
-and a Blog site to see whats poeple say.
+If you like little dogs in particular Chihuahuas then Shop ChiChi is the shop for you!
+This is a E-commerce Shop for Chihuahua clothes with an Event site  were you can see which activites are planed
+and a Blog site to see what people say.
 
 ## UX
-![Colors-used](https://github.com/2tracks/shop-chichi-ms-4/blob/master/misc/colors.png?raw=true)
+### User Stories
+
 
 
 - Wireframe made with Balsamic
+
+#### Color scheme
+![Colors-used](https://github.com/2tracks/shop-chichi-ms-4/blob/master/misc/colors.png?raw=true)
 - Color example made with Adobe XD
+
 ## Features
 
 - Shop
@@ -25,7 +30,7 @@ and a Blog site to see whats poeple say.
 - Blog overview
 - Blog detail Page
 - Add comments on the blog post 
-- Searcg by blog category
+- Search by blog category
 
 ### Exiting Features
 
@@ -64,6 +69,9 @@ and a Blog site to see whats poeple say.
 - Heroku App
 
 ## Testing
+I tested this site with Goggle Chrome Developer tools and in Safary and Firefox.
+
+#### General testing
 Linter
 - Flake 8 - I choose to ignore the 'line to long warning'
 - Problems tab in the Terminal
@@ -72,6 +80,22 @@ Linter
 #### Validation
 - [HTML validation](https://validator.w3.org/)
 - [CSS validation](https://jigsaw.w3.org/css-validator/)
+
+#### Test as a User
+- The user cklicks the ...
+
+#### Test as a Admin
+- Login as Admin from the Website
+
+## Issues
+While working in Gitpod is good it has also a downside, the internet connection 
+is not very good where I live. As I performed a git push my Internet connection
+got lost and I ended up with the message Master diverged. I could not push up to Github anymore.
+I started to search online but there were so many different advices that I diceded to read
+the Git docs. I checked the log files for differences - there was only one push.
+I could pull the Github repo or do a hard reset but because I've never done it before and I didn't want to lose the histoty
+I decided to start a know workspace, installed the requirements.txt, created a new superuser and loaded in the data.
+If that wasn't my Milestone Project I probably would have downloaded a .zip from the Repo to have it save and then pulled the repo in.
 
 ## Deployment
 - Create a new Heroku app - New app - chose closest region
