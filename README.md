@@ -3,11 +3,44 @@
 
 If you like little dogs in particular Chihuahuas then Shop ChiChi is the shop for you!
 This is a E-commerce Shop for Chihuahua clothes with an Event site  were you can see which activites are planed
-and a Blog site to see what people say.
+and a Blog site to see what people say. This Project is made with Django3 - Python - Bootstrap hosted on Heroku and the static files on AWS S3 Bucket.
 
 ## UX
 ### User Stories
 
+Who             | What                      | Why
+----------------|---------------------------|----------------
+Shopper / User  |View a list of products   | To be able to buy a product
+Shopper / User  |Search by different criterias |Find the desired product
+Shopper / User  |View product details page|Containing price, description, product rating product image and sizes
+Shopper / User  |Quickly find deals, clearance and special offers|Take advantage of special savings on products
+Shopper / User  |View the total of the purchases at any time|To keep track on the amount
+Shopper / User  |See the Events |To join en event if wanted
+Shopper / User  |See blog posts|See what other Users say
+Shopper / User  |Visit the details page of a post|If interested read the whole blog post
+Shopper / User  |Leave a comment on a particular post|Say something to other users
+Shopper / User  |See posts by category|Search for a particular topic
+Shopper / User  | Register for an account|To have all your details stored
+Shopper / User  |Login and logout|To access your details
+Shopper / User  |Receive an email confirmation after registering|To make sure it worked
+Shopper / User  |Sort the available products|By best rated, best prices and by category
+Shopper / User  |Search for a product by name or description - searchbar|Find a specific product
+Shopper / User  |Select the size and quantity of a product when purchasing it|So the user get the right size
+Shopper / User  |View items in the chart|So the user can check if it's correct
+Shopper / User  |Adjust the quantity|So the user can order the quantity he wants
+Shopper / User  |View an order confirmation after checkout|Verify that I haven't made any mistakes
+Shopper / User  |Receive an email confirmation|For the users record
+Manager / Admin |Add product|Must be able to add a new item to the store via form.
+Manager / Admin |Edit / Update a product|The responsible person must be able to modify a record 
+Manager / Admin |Delete a product|The responsible person must be able to delete an item/record.
+Manager / Admin |Add an event|The responsible person must be able to add an event via django admin board. 
+Manager / Admin |Edit / Update an event|The responsible person must be able to modify an event via django admin board. 
+Manager / Admin |Delete an event|The responsible person must be able to delete an event via django admin board. 
+Manager / Admin |Edit a comment|Must be able to modify a comment in the django admin
+Manager / Admin |Delete a comment|Must be able to delete a comment in the django admin
+Manager / Admin |Add blog post|Must be able to add a blog post in the django admin
+Manager / Admin |Edit a blog post|Must be able to modify a blog post in the django admin
+Manager / Admin |Delete a blog post|Must be able to delete a blog post in the django admin
 
 
 - Wireframe made with Balsamic
@@ -80,9 +113,13 @@ Linter
 #### Validation
 - [HTML validation](https://validator.w3.org/)
 - [CSS validation](https://jigsaw.w3.org/css-validator/)
+- [Lavascript validation](https://jshint.com/)
+- [Python Pip8 validation](http://pep8online.com/)
 
 #### Test as a User
 - The user cklicks the ...
+- Ckick Register and fill in the form, received cornfimation email and have been forwarded to corfim email page and chlicked connection
+confirm got redirected to Login page.
 
 #### Test as a Admin
 - Login as Admin from the Website
