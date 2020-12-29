@@ -44,19 +44,17 @@ Manager / Admin |Add blog post|Must be able to add a blog post in the django adm
 Manager / Admin |Edit a blog post|Must be able to modify a blog post in the django admin
 Manager / Admin |Delete a blog post|Must be able to delete a blog post in the django admin
 
-
-- Wireframe made with Balsamic
-
 #### Color scheme
 ![Colors-used](https://github.com/2tracks/shop-chichi-ms-4/blob/master/misc/colors.png?raw=true)
 ![Colors-example](https://github.com/2tracks/shop-chichi-ms-4/blob/master/misc/colorexample.png?raw=true)
 - Color example made with Adobe XD
+- Wireframe made with Balsamic
 
 ## Features
 
 - Shop
-- Search by category
-- Sort by price, rating, 
+- Search by category or topic
+- Sort by price, rating 
 - View all products
 - View all clothes
 - Search for different topics
@@ -67,8 +65,6 @@ Manager / Admin |Delete a blog post|Must be able to delete a blog post in the dj
 - Blog detail Page
 - Add comments on the blog post 
 - Search by blog category
-
-### Exiting Features
 
 ### Features left to implement
 - Newsletter
@@ -127,7 +123,7 @@ confirm got redirected to Login page.
 #### Test as a Admin
 - Login as Admin from the Website
 
-## Issues
+## Issues 1
 While working in Gitpod is good it has also a downside, the internet connection 
 is not very good where I live. As I performed a git push my Internet connection
 got lost and I ended up with the message Master diverged. I could not push up to Github anymore.
@@ -136,21 +132,65 @@ the Git docs. I checked the log files for differences - there was only one push.
 I could pull the Github repo or do a hard reset but because I've never done it before and I didn't want to lose the histoty
 I decided to start a know workspace, installed the requirements.txt, created a new superuser and loaded in the data.
 If that wasn't my Milestone Project I probably would have downloaded a .zip from the Repo to have it save and then pulled the repo in.
+## Issue 2
+Very important name your Github Repo not with underscores use dashes or you will run into trouble when deploying.
+
+## If you would like to use this Project
+1. Download the project
+2. You can create a virtuell environment in python (venv) or you can work on Gitpod
+3. Install Django, python -m pip3 install Django
+4. Install the requirements.txt, pip3 install -r requirements.txt
+5. create a superuser, python3 manage.py createsuperuser
+6. Migrate the database, python3 manage.py migrate
+7. Loaddata for the project, python3 manage.py loaddata categories
+8. Loaddata for the project, python3 manage.py loaddata products
 
 ## Deployment
-- Create a new Heroku app - New app - chose closest region
-- install pip3 install dj_database_url
-- pip3 install psycopg2-binary
-- pip3 freeze > requirements.txt
+I assume the Project is up and running.
+### On Heroku
+- Create a new Heroku app
+- Navigate to www.Heroku.com - Login - New app - Choose closest region to you
+- The name of the app has to be unique
+- Copy over the environment variables and the secret keys
+- Under Resources select Heroku Postgres
+- If that's ready go back to Github
+
+### Deploying to Heroku
+- On Gitpod install, ```pip3 install dj_database_url```
+- ```pip3 install psycopg2-binary```
+- ```pip3 freeze > requirements.txt```
 - import dj_database_url in settings.py
-- database settings to Heroku url
-- Migrate
-- create a superuser
-- pip3 install gunicorn
+- In settings.py set ```ALLOWED_HOSTS = ['shop-chichi-ms-4.herokuapp.com', 'localhost']```
+- Migrate, ```python3 manage.py migrate```
+- create a superuser, ```python3 manage.py create superuser```
+- On Gitpod install the webserver, ```pip3 install gunicorn```
 - pip3 freeze > requirements.txt
-- create Procfile
+- create Procfile write ```web: gunicorn shop_chichi.wsgi:application```
 - heroku login -i
-- heroku config:set Disable_COLLECTSTATC=1
+- heroku config:set Disable_COLLECTSTATC=
+- ```heroku git:remote -a <your app name here>```
+- You can push it to Heroku now ```git push heroku master```
+
+### Deploy the static files to ASW S3 Bucket
+To host your static files you have to create an accound on AWS Amazon Web Services Create an S3 Bucket and
+with public access. You have to create a Usergroup and add a user to it upload the create a folder and upload the files.
+Make sure to Variables are set in settings .py and on Heroku.
+```
+# Bucket Config
+    AWS_STORAGE_BUCKET_NAME = 'shop-chichi-ms-4'
+    AWS_S3_REGION_NAME = 'eu-west-2'
+    AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+    AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+    AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com' ```
+
+
+# On Heroku
+    USE_AWS (set to True)
+    AWS_ACCESS_KEY_ID
+    AWS_SECRET_ACCESS_KEY
+```
+
+
 ## Credits
 - For the Blog [Code with Stein](https://www.youtube.com/channel/UCfVoYvY8BfTDeF63JQmQJvg)
 - For the e-commerce shop I used the Code Institute Dublin course on Boutique Ado.
