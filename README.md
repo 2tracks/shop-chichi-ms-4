@@ -102,6 +102,7 @@ Manager / Admin |Delete a blog post|Must be able to delete a blog post in the dj
 
 ## Testing
 I tested this site with Goggle Chrome Developer tools and in Safary and Firefox.
+![Lighthouse](https://github.com/2tracks/shop-chichi-ms-4/blob/master/misc/lighthouse.png?raw=true)
 
 #### General testing
 Linter
