@@ -50,6 +50,9 @@ Manager / Admin |Delete a blog post|Must be able to delete a blog post in the dj
 - Color example made with Adobe XD
 - Wireframe made with Balsamic
 
+### Databse design
+I designed the database on [dbdiagram.io](https://dbdiagram.io/home)
+![Database-ShopChiChi](https://github.com/2tracks/shop-chichi-ms-4/blob/master/misc/db_shopchichi.png?raw=true)
 ## Features
 
 - Shop
@@ -102,11 +105,13 @@ Manager / Admin |Delete a blog post|Must be able to delete a blog post in the dj
 
 ## Testing
 I tested this site with Goggle Chrome Developer tools and in Safary and Firefox.
+I used Lighthouse to perform a test.
+
 ![Lighthouse](https://github.com/2tracks/shop-chichi-ms-4/blob/master/misc/lighthouse.png?raw=true)
 
 #### General testing
 Linter
-- python -m flake8
+- I used the command ```python -m flake8`` to see all problems and correct if possible.
 - Flake 8 - I choose to ignore the 'line to long warning'
 - Problems tab in the Terminal
 - https://jsonformatter.org/json-pretty-print
