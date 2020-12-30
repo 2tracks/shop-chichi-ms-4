@@ -11,4 +11,5 @@ class EventAdmin(admin.ModelAdmin):
         'timestamp',
     )
 
+
 admin.site.register(Event, EventAdmin)

@@ -38,7 +38,7 @@ def add_to_chart(request, item_id):
             messages.success(request, f'Updated {product.name} quantity to {chart[item_id]}')
         else:
             chart[item_id] = quantity
-            messages.success(request,f'Added {product.name} to your chart')
+            messages.success(request, f'Added {product.name} to your chart')
 
     request.session['chart'] = chart
     return redirect(redirect_url)
