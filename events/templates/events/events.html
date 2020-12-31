@@ -43,6 +43,12 @@
             </div>
             <hr class="border-rosa-dark mb-4">
         </div>
+        {% empty %}
+        <div class="row pb-2">
+            <div class="col-12">
+                <div class="text-black">No events planned</div>
+            </div>
+        </div>
         {% endfor %}
     </div>
 </div> <!-- /.container-fluid -->

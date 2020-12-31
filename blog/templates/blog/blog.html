@@ -13,7 +13,7 @@
     </div>
 {% endblock %}
 {% block content %}
-<div class="overlay overlay-events"></div>
+    <div class="overlay overlay-events"></div>
     <div class="container-fluid">
         <div class="bg-white-trans-blog">
             <div class="row">
@@ -23,7 +23,6 @@
                 </div>
             </div>
             {% for post in posts %}
-    
             <div class="row pt-2">
                 <div class="col-8 offset-2">
                     <h3 class="text-rosa-dark">{{ post.title }}</h3>
@@ -44,7 +43,13 @@
                     <a href="{% url 'detail_post'  post.slug %}" class="text-rosa-dark">Read more <i class="fas fa-forward"></i></a>
                 </div>
             </div>
-    </div>
-    {% endfor %}
-</div><!-- /. container-fluid -->
+            {% empty %}
+            <div class="row pb-2">
+                <div class="col-8 offset-2">
+                    <div class="text-center">No blog post here</div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>      
+    </div><!-- /. container-fluid -->
 {% endblock %}

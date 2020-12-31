@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .models import Category, Post, Comment
+from .models import Category, Post
 from .forms import CommentForm
 
 
