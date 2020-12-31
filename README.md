@@ -48,6 +48,9 @@ Manager / Admin |Delete a blog post|Must be able to delete a blog post in the dj
 ![Colors-used](https://github.com/2tracks/shop-chichi-ms-4/blob/master/misc/colors.png?raw=true)
 ![Colors-example](https://github.com/2tracks/shop-chichi-ms-4/blob/master/misc/colorexample.png?raw=true)
 - Color example made with Adobe XD
+- [You can find Mockups 1 here:](https://github.com/2tracks/shop-chichi-ms-4/blob/master/misc/mockup1.png?raw=true)
+- [You can find Mockups 2 here:](https://github.com/2tracks/shop-chichi-ms-4/blob/master/misc/mockup2.png?raw=true)
+- [You can find Mockups 3 here:](https://github.com/2tracks/shop-chichi-ms-4/blob/master/misc/mockup2.png?raw=true)
 
 
 ### Databse design
@@ -135,7 +138,7 @@ I used Lighthouse to perform a test.
 - [Lavascript validation](https://jshint.com/)
 - [Python Pip8 validation](http://pep8online.com/)
 
-I tried to validate my code as good as possible but with the different validaters by copy and pasting the code.
+I tried to validate my code as good as possible with the different validaters by copy and pasting the code.
 
 #### Test as a Admin
 - Login as Admin from the Website ```click My Account - Login``` Sign in with user name and password, when logged in under My Account a link Product Management
