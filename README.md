@@ -5,8 +5,7 @@ If you like little dogs, Chihuahuas in particular, then our Shop ChiChi is the s
 This is an E-commerce Shop for Chihuahua clothes with an Event site, where you can see which activites are planned
 and a Blog site to see what people have been up to. This Project is made with Django3 - Python - Bootstrap hosted on Heroku and the static files on AWS S3 Bucket.
 
-[You can visit the Live Demo here](https://shop-chichi-ms-4.herokuapp.com/){:target="_blank" rel="noopener"}
-
+[You can visit the Live Demo here](https://shop-chichi-ms-4.herokuapp.com/)
 ## UX
 ### User Stories
 
@@ -273,7 +272,7 @@ things change over time when AWS is performing an update.
 - Create a user, give it programmatic access and put the user into your group (manage-shopchichi)
 - Now download the users .csv file which contains the user access key and secret key. Save it you cannot download it again when finished.
 
-## Connect Django to AWS S3 Bucket
+### Connect Django to AWS S3 Bucket
 - pip install boto3
 - pip install django-storages
 - pip freeze > requirements.txt
