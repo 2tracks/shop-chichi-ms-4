@@ -5,7 +5,7 @@ If you like little dogs, Chihuahuas in particular, then our Shop ChiChi is the s
 This is an E-commerce Shop for Chihuahua clothes with an Event site, where you can see which activites are planned
 and a Blog site to see what people have been up to. This Project is made with Django3 - Python - Bootstrap hosted on Heroku and the static files on AWS S3 Bucket.
 
-[You can visit the Live Demo here](https://shop-chichi-ms-4.herokuapp.com/)
+[You can visit the Live Demo here](https://shop-chichi-ms-4.herokuapp.com/){:target="_blank" rel="noopener"}
 
 ## UX
 ### User Stories
@@ -141,7 +141,7 @@ I used Lighthouse to perform a test.
 I tried to validate my code as good as possible with the different validaters by copy and pasting the code.
 
 #### Test as a Admin
-- Login as Admin from the Website ```click My Account - Login``` Sign in with user name and password, when logged in under My Account a link Product Management
+- Login as Admin from the Website ```click My Account - Login``` - you'll get a success message. Sign in with user name and password, when logged in under My Account a link Product Management
 appears which is not visible when logged in as User. 
 - Click on Product Management and add a product with image, a succsess message appears. I tested the form by adding a product without image or an invalid price.
 - Keep shopping button takes you back to the products page
@@ -149,13 +149,13 @@ appears which is not visible when logged in as User.
 - Finally I deleted the same product and searched for it and got the message 0 Products found for "test".
 - As a superuser I can see the Edit/Delete option under the Product.
 - I've logged in to the Admin panel via ```https://shop-chichi-ms-4.herokuapp.com/admin/``` and tested if all the functions are there 
-- Site administration: The admin is able to CRUD a product or category the same goes for checkout/orders, blog/posts, comments and categories and Events
-- The Admin is able to CRUD Users and Groups and Email 
-- When I logged out I got a success message
+- Site administration: The admin is able to CRUD a product or category the same goes for checkout/orders, blog/posts, comments and categories and events
+- The Admin is able to CRUD Users and Groups and Emails
+- When I log out I get a success message
 - I can only create Events as an Superuser in the Admin panel same goes for Blog posts
 
 #### Test as a User
-- Clicked Register and filled in the form, received cornfimation email and
+- I clicked Register and filled in the form, I received a cornfimation email and
  have been forwarded to the ```confirm email page``` and clicked confirm connection - got redirected to Login page.
 - Register as a User, type your email, username and password and submit
 - I got a message to verify my email address as well as an alert that a cormimation email has been sent.
@@ -190,21 +190,21 @@ Very important - name your Github Repo with dashes instead of underscores or you
 
 ## If you would like to use this Project
 1. Download the project
-2. You can create a virtual environment in python (venv) or you can work on Gitpod
-3. Install Django, python -m pip3 install Django
-4. Install the requirements.txt, pip3 install -r requirements.txt
-5. create a superuser, python3 manage.py createsuperuser
-6. Migrate the database, python3 manage.py migrate
-7. Loaddata for the project, python3 manage.py loaddata categories
-8. Loaddata for the project, python3 manage.py loaddata products
+2. You can create a virtual environment in python ```python3 venv nameofthevenv``` or you can work on Gitpod
+3. Install Django ```python -m pip3 install Django```
+4. Install the requirements.txt ```pip3 install -r requirements.txt```
+5. create a superuser ```python3 manage.py createsuperuser```
+6. Migrate the database ```python3 manage.py migrate```
+7. Loaddata for the project ```python3 manage.py loaddata categories```
+8. Loaddata for the project ```python3 manage.py loaddata products```
 
 ## Deployment
 I assume the Project is up and running.
 ### On Heroku
 - Create a new Heroku app
 - Navigate to www.Heroku.com - Login - New app - Choose closest region to you
-- The name of the app has to be unique
-- Copy over the environment variables and the secret keys
+- Give the app a name, the name of the app has to be unique
+- Copy over the environment variables and the secret keys or create new once if exposed before
 - Under Resources select Heroku Postgres
 - If that's ready, go back to Gitpod
 
@@ -212,37 +212,95 @@ I assume the Project is up and running.
 - On Gitpod install, ```pip3 install dj_database_url```
 - ```pip3 install psycopg2-binary```
 - ```pip3 freeze > requirements.txt```
-- import dj_database_url in settings.py
-- In settings.py set ```ALLOWED_HOSTS = ['shop-chichi-ms-4.herokuapp.com', 'localhost']```
+- import dj_database_url in settings.py and set the database to ```DATABASES={'default':dj_database_url.parse('postgres:// you get this from your config vars at Heroku')}```
+- In settings.py set ```ALLOWED_HOSTS = ['shop-chichi-ms-4.herokuapp.com', 'localhost']``` or whatever you call your project
 - Migrate, ```python3 manage.py migrate```
+- Then load the data ```python3 manage.py loaddata categories``` and ```python3 manage.py loaddata products```
 - Create a superuser, ```python3 manage.py create superuser```
+- Remove the database settings so it doesn't end up in version control and deploy 
+- Set the database to ``` 
+
+        if 'DATABASE_URL' in os.environ:
+            DATABASES = {
+                'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+            }
+        else:
+            DATABASES = {
+                'default': {
+                    'ENGINE': 'django.db.backends.sqlite3',
+                    'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+                }
+            }
+
+    ```
 - On Gitpod install the webserver, ```pip3 install gunicorn```
 - pip3 freeze > requirements.txt
 - create Procfile write ```web: gunicorn shop_chichi.wsgi:application```
 - heroku login -i
-- heroku config:set Disable_COLLECTSTATC=
+- heroku config:set Disable_COLLECTSTATC=1 --app appname
 - ```heroku git:remote -a <your app name here>```
 - You can push it to Heroku now ```git push heroku master```
 
 ### Deploy the static files to ASW S3 Bucket
 To host your static files you have to create an account on AWS Amazon Web Services. Create an S3 Bucket and
 with public access. You have to create a usergroup and add a user to it, create a folder and upload the files.
-Make sure variables are set in settings .py and on Heroku. I recommend you read the docs or watch a tutorial on AWS as these
+Make sure variables are set in settings.py and on Heroku. I recommend you read the docs or watch a tutorial on AWS as these
 things change over time when AWS is performing an update.
+
+- Create an account on AWS, you have to put your credit card information in.
+- Signin to the management console.
+- Open S3 and create a new Bucket and give it the same name as your app and chose the closest region.
+- Tick the publick box as this Bucket needs to have public access.
+- Go to basic settings, prperties, static website hosting - use the default values
+- On the permissionstab past in the CORS configuration.
+- On the Bucket policy tab - policy generator
+- Type og policy - S3 Bucket policy - principles add a (*)
+- Action GetObject
+- Paste the ARN into the ARN box
+- Generate policy
+- Copy the policy into the bucket policy generator
+- Add a /* to the end of the Resource keys
+- Go to the access control list tab grant everyone access to list objects under public access and save.
+
+- we need to create a user in order to access the Bucket, we do this through IAM Services
+- Go to Serverless tab then IAM service, create a group for the user to live in
+- Create a group (manage-shopchichi)
+- Click Policy create policy, go to JSON tab, import managed policy, S3 full access policy
+    - under Resource copy in the Bucket ARN "Resource": ["arn..."]
+    - click review policy and give it a name and a description and create policy
+- In groups manage-shopchichi click attach policy (the one you created)
+
+- Create a user, give it programmatic access and put the user into your group (manage-shopchichi)
+- Now download the users .csv file which contains the user access key and secret key. Save it you cannot download it again when finished.
+
+## Connect Django to AWS S3 Bucket
+- pip install boto3
+- pip install django-storages
+- pip freeze > requirements.txt
+
+- In settings.py add 'storages' to installed appears
+- In settings.py set and on Heroku set the Config vars from the .csv file
 ```
-# Bucket Config in settings.py
+    # Bucket Config
     AWS_STORAGE_BUCKET_NAME = 'shop-chichi-ms-4'
     AWS_S3_REGION_NAME = 'eu-west-2'
     AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
     AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
-    AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com' ```
+    AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
 
-
-# On Heroku
+    # On Heroku
     USE_AWS (set to True)
     AWS_ACCESS_KEY_ID
     AWS_SECRET_ACCESS_KEY
 ```
+- Delete the DISABLE_COLLECTSTATC varible
+- The file custom_storages.py contains the custom storage classes which are used in settings.py.
+- Add the media files to S3 go to S3 and add a new folder media
+- Inside the media folder click upload, add files, select all images and click open, grant public read access, upload.
+- Verify the users email address in the admin.
+- Add the Stripe API keys to the Heroku Config Vars.
+- Add a new endpoint to Stripe which points to the Heroku app
+- On Heroku add the Stripe Signin secret to the Config Vars. 
 
 
 ## Credits
