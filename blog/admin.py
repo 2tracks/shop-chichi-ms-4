@@ -8,7 +8,7 @@ class PostAdmin(admin.ModelAdmin):
         'intro',
         'article',
         'image',
-        'data_added',
+        'date_added',
     )
 
 
@@ -22,7 +22,7 @@ class CommentAdmin(admin.ModelAdmin):
     list_display = (
         'name',
         'article',
-        'data_added',
+        'date_added',
     )
 
 
