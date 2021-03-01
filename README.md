@@ -47,9 +47,12 @@ Manager / Admin |Delete a blog post|Must be able to delete a blog post in the dj
 ![Colors-used](https://github.com/2tracks/shop-chichi-ms-4/blob/master/misc/colors.png?raw=true)
 ![Colors-example](https://github.com/2tracks/shop-chichi-ms-4/blob/master/misc/colorexample.png?raw=true)
 - Color example made with Adobe XD
-- [You can find Mockups 1 here:](https://github.com/2tracks/shop-chichi-ms-4/blob/master/misc/mockup1.png?raw=true)
-- [You can find Mockups 2 here:](https://github.com/2tracks/shop-chichi-ms-4/blob/master/misc/mockup2.png?raw=true)
-- [You can find Mockups 3 here:](https://github.com/2tracks/shop-chichi-ms-4/blob/master/misc/mockup2.png?raw=true)
+- [Mockups 1](https://github.com/2tracks/shop-chichi-ms-4/blob/master/misc/mockup1.png?raw=true)
+- [Mockups 2](https://github.com/2tracks/shop-chichi-ms-4/blob/master/misc/mockup2.png?raw=true)
+- [Mockups 3](https://github.com/2tracks/shop-chichi-ms-4/blob/master/misc/mockup2.png?raw=true)
+- [Blog Wireframe](https://github.com/2tracks/shop-chichi-ms-4/blob/master/misc/Blog.png?raw=true)
+- [Blog detail Wireframe](https://github.com/2tracks/shop-chichi-ms-4/blob/master/misc/Blog_details.png?raw=true)
+- [Event Wireframe](https://github.com/2tracks/shop-chichi-ms-4/blob/master/misc/Events.png?raw=true)
 
 
 ### Databse design
@@ -86,7 +89,7 @@ I designed the database on [dbdiagram.io](https://dbdiagram.io/home)
 ### Features left to implement
 - Newsletter
 - Review - the ability to leave a review.
-- Footer - with an impressum and copyright and legal requirements
+- Footer - with an impressum and copyright and legal requirements, I started to add a footer as include but I didn't like it on the landing page so I decided to leave it for later.
 - Blog - the ability to leave comments on the comment.
 - Searchbar for the whole Site with Blog and Event in a Search APP independent and addaptable.
 
