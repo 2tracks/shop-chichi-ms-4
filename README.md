@@ -189,6 +189,10 @@ I decided to start a new workspace, installed the requirements.txt, created a ne
 If that wasn't my Milestone Project I probably would have downloaded a .zip from the Repo to have it saved and then pulled the repo in.
 ## Issue 2
 Very important - name your Github Repo with dashes instead of underscores or you will run into trouble when deploying.
+## Issue 3
+I realised that in the blog app I named the date field data_added so I had to change it to date_added.
+- I changed the field name in the model.py Post and Comment then I had to migrate again and deploy it to Heroku.
+- In the CLI login to Heroku with ```heroku login -i``` and type ```heroku run python3 manage.py migrate blog```.
 
 ## If you would like to use this Project
 1. Download the project
